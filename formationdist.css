@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ici c'est le style de toute la page , */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* voici le header  principal avec la couleur de fond qui va avec */
+.header {
+  padding: 120px;
+  text-align: center;
+  background: url(./img/Info_web_logo_2.png) no-repeat;
+  background-position: center;
+  background-color: rgb(203, 255, 255);
+}
+
+/* ici on defini la taille du h1 qui ce de trouve dans le header de cette façon */
+.header h1 {
+  font-size: 40px;
+}
+
+/*  ici c'est ma navbard et grace au -webkit-sticky je definis mon petit effet*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/*  ici je defini le style des lien qui ce trouve dans ma navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/*  allignement de tous les lien  vers la droite*/
+.navbar a.right {
+  float: right;
+}
+
+/* le change de couleur du a */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* la c'est l'effet donné sur le lien lorsque je met ma souris dessus  */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* le style donnée a ma class row  */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  
+
+}
+
+/* le style donnée a ma classe side*/
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  
+}
+
+/* le style donnée a ma classe main*/
+.main {   
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  background-color: blanchedalmond;
+}
+
+.main li{
+  list-style: none;
+}
+
+.nosforms {
+  background-color: #666;
+  padding: 20px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-content: top;
+  align-items: center; 
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nosforms img{
+padding-right: 10px;
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(203, 255, 255);
+}
